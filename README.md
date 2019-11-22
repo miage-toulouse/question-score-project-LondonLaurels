@@ -1,10 +1,10 @@
 # MIAGe Master 1 - TP Tests 1
 
-### NOM : DOE
-### Prénom : John
+### NOM : CORREARD
+### Prénom : Laura
 ### Groupe de TP : 
-- [ ] 1
-- [x] 2
+- [X] 1
+- [ ] 2
 - [ ] 3
 
 
