@@ -18,7 +18,7 @@ public class QuestionAChoixMultipleTest {
         List<Integer> l=  new ArrayList<Integer>();
         l.add(1);
         l.add(2);
-        question = new QuestionAChoixMultiple("un énoncé", l);
+        question = new QuestionAChoixMultiple("un énoncé", l, 5);
     }
 
     @Test
@@ -55,8 +55,8 @@ public class QuestionAChoixMultipleTest {
         for(Integer i : indiceEtudiant) {
             resScore += question.getScoreForIndice(i);
         }
-        //then: le score obtenu fait 50 car 1 réponse sur 2 est juste
-        assertEquals(50f, resScore, 0.01);
+        //then: le score obtenu fait 16.66 car 1 réponse sur 2 est juste
+        assertEquals(16.66f, resScore, 0.01);
     }
 
 }

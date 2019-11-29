@@ -2,6 +2,8 @@ package miagem1;
 
 import java.util.List;
 
+import static java.lang.Math.abs;
+
 /**
  * Created by franck on 28/11/2016.
  */
@@ -17,9 +19,6 @@ public class ScoreCalculateur {
         for (int indice:indicesReponseEtudiant) {
             score += question.getScoreForIndice(indice);
         }
-        return score;
+        return (score < 0) ? 0 : score ; // si le score est négatif, on renvoie 0.
     }
-
-
-
 }
